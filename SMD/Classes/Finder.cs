@@ -140,7 +140,7 @@ namespace SMD
                     p = getProcess(player);
                     if (p.Player != MusicPlayers.None)
                     {
-                        Regex r = new Regex(@"(.*?) - (.*?)", RegexOptions.IgnoreCase | RegexOptions.Singleline);
+                        Regex r = new Regex(@"(.*?) - (.*?)$", RegexOptions.IgnoreCase | RegexOptions.Singleline);
                         Match m = r.Match(p.Title);
                         
                         if (m.Success)

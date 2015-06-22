@@ -1,0 +1,12 @@
+C:\Users\Thomas\Documents\GitHub\Stream-Music-Displayer\SMD\bin\Release\Players.xml
+C:\Users\Thomas\Documents\GitHub\Stream-Music-Displayer\SMD\bin\Release\SMD.exe.config
+C:\Users\Thomas\Documents\GitHub\Stream-Music-Displayer\SMD\bin\Release\SMD.exe
+C:\Users\Thomas\Documents\GitHub\Stream-Music-Displayer\SMD\bin\Release\SMD.pdb
+C:\Users\Thomas\Documents\GitHub\Stream-Music-Displayer\SMD\obj\Release\SMD.csproj.ResolveComReference.cache
+C:\Users\Thomas\Documents\GitHub\Stream-Music-Displayer\SMD\obj\Release\SMD.About.resources
+C:\Users\Thomas\Documents\GitHub\Stream-Music-Displayer\SMD\obj\Release\SMD.Main.resources
+C:\Users\Thomas\Documents\GitHub\Stream-Music-Displayer\SMD\obj\Release\SMD.Options.resources
+C:\Users\Thomas\Documents\GitHub\Stream-Music-Displayer\SMD\obj\Release\SMD.Properties.Resources.resources
+C:\Users\Thomas\Documents\GitHub\Stream-Music-Displayer\SMD\obj\Release\SMD.csproj.GenerateResource.Cache
+C:\Users\Thomas\Documents\GitHub\Stream-Music-Displayer\SMD\obj\Release\SMD.exe
+C:\Users\Thomas\Documents\GitHub\Stream-Music-Displayer\SMD\obj\Release\SMD.pdb
