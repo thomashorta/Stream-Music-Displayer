@@ -140,7 +140,7 @@ namespace SMD
                     p = getProcess(player);
                     if (p.Player != MusicPlayers.None)
                     {
-                        Regex r = new Regex(@"(?<=Spotify - )(.*?) – (.*)$", RegexOptions.IgnoreCase | RegexOptions.Singleline);
+                        Regex r = new Regex(@"(.*?) - (.*?)", RegexOptions.IgnoreCase | RegexOptions.Singleline);
                         Match m = r.Match(p.Title);
                         
                         if (m.Success)
@@ -320,44 +320,44 @@ namespace SMD
                 if (!String.IsNullOrEmpty(Proc.MainWindowTitle))
                 {
                     //Spotify
-                    if (Proc.ProcessName.Contains("spotify"))
+                    if (Proc.ProcessName.ToLower().Contains("spotify"))
                         ProcessList.Add(new ProcessInfo(Proc.ProcessName, Proc.MainWindowTitle, Proc.Id, MusicPlayers.Spotify));
 
                     //Foobar2000
-                    else if (Proc.ProcessName.Contains("foobar2000"))
+                    else if (Proc.ProcessName.ToLower().Contains("foobar2000"))
                         ProcessList.Add(new ProcessInfo(Proc.ProcessName, Proc.MainWindowTitle, Proc.Id, MusicPlayers.Foobar2000));
 
                     //AIMP3
-                    else if (Proc.ProcessName.Contains("AIMP3"))
+                    else if (Proc.ProcessName.ToLower().Contains("AIMP3"))
                         ProcessList.Add(new ProcessInfo(Proc.ProcessName, Proc.MainWindowTitle, Proc.Id, MusicPlayers.AIMP3));
 
                     //Winamp
-                    else if (Proc.ProcessName.Contains("winamp"))
+                    else if (Proc.ProcessName.ToLower().Contains("winamp"))
                         ProcessList.Add(new ProcessInfo(Proc.ProcessName, Proc.MainWindowTitle, Proc.Id, MusicPlayers.Winamp));
 
                     //VLC
-                    else if (Proc.ProcessName.Contains("vlc"))
+                    else if (Proc.ProcessName.ToLower().Contains("vlc"))
                         ProcessList.Add(new ProcessInfo(Proc.ProcessName, Proc.MainWindowTitle, Proc.Id, MusicPlayers.VLC));
 
                     //Media Player Classic Home Cinema (mpc-hc)
-                    else if (Proc.ProcessName.Contains("mpc-hc"))
+                    else if (Proc.ProcessName.ToLower().Contains("mpc-hc"))
                         ProcessList.Add(new ProcessInfo(Proc.ProcessName, Proc.MainWindowTitle, Proc.Id, MusicPlayers.MPC));
 
                     //Mediamonkey
-                    else if (Proc.ProcessName.Contains("MediaMonkey"))
+                    else if (Proc.ProcessName.ToLower().Contains("MediaMonkey"))
                         ProcessList.Add(new ProcessInfo(Proc.ProcessName, Proc.MainWindowTitle, Proc.Id, MusicPlayers.MediaMonkey));
 
                     //(wmplayer) Windows Media Player
-                    else if (Proc.ProcessName.Contains("wmplayer"))
+                    else if (Proc.ProcessName.ToLower().Contains("wmplayer"))
                         ProcessList.Add(new ProcessInfo(Proc.ProcessName, Proc.MainWindowTitle, Proc.Id, MusicPlayers.WindowsMP));
 
                     //iTunes
-                    else if (Proc.ProcessName.Contains("iTunes"))
+                    else if (Proc.ProcessName.ToLower().Contains("iTunes"))
                         ProcessList.Add(new ProcessInfo(Proc.ProcessName, Proc.MainWindowTitle, Proc.Id, MusicPlayers.iTunes));
 
 
                     //Browsers
-                    else if (Proc.ProcessName.Contains("chrome") || Proc.ProcessName.Contains("firefox"))
+                    else if (Proc.ProcessName.ToLower().Contains("chrome") || Proc.ProcessName.ToLower().Contains("firefox"))
                     {
                         //Grooveshark
                         if (Proc.MainWindowTitle.ToLower().Contains("grooveshark"))

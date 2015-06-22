@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using iTunesLib;
+//using iTunesLib;
 
 namespace SMD.API
 {
@@ -13,9 +13,10 @@ namespace SMD.API
         {
             try
             {
-                iTunesApp app = new iTunesAppClass();
-                IITTrack track = app.CurrentTrack;
-                return new Song(track.Artist, track.Name);
+                //iTunesApp app = new iTunesAppClass();
+                //IITTrack track = app.CurrentTrack;
+                //return new Song(track.Artist, track.Name);
+                return new Song("Error on iTunes Lib");
             }
             catch (Exception e)
             {
